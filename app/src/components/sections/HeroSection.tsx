@@ -113,7 +113,7 @@ export function HeroSection({ onSearch }: HeroSectionProps) {
         <div ref={labelRef} className="flex items-center justify-center gap-4 mb-8">
           <div className="w-12 h-px bg-[#C8B89A]" />
           <span className="text-[#C8B89A] text-sm tracking-[0.3em] uppercase">
-            Balneário Camboriú · SC
+            Imobiliária de Alto Padrão · Balneário Camboriú
           </span>
           <div className="w-12 h-px bg-[#C8B89A]" />
         </div>
@@ -123,18 +123,40 @@ export function HeroSection({ onSearch }: HeroSectionProps) {
           ref={headlineRef}
           className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-light leading-tight mb-6"
         >
-          Encontre Onde Sua
+          O Imóvel Certo
           <br />
-          <span className="italic">História Merece</span> Ser Escrita
+          Não Aparece em
+          <br />
+          <span className="italic">Qualquer Vitrine</span>
         </h1>
+
+        {/* Ticker */}
+        <div className="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden mb-10 py-3 border-y border-[#C8B89A]/20">
+          <div className="flex whitespace-nowrap animate-ticker">
+            {[...Array(3)].map((_, i) => (
+              <span key={i} className="flex items-center gap-0 shrink-0">
+                <span className="text-[#C8B89A]/60 text-xs tracking-[0.25em] uppercase font-light">COBERTURA · BARRA SUL · 4 SUÍTES · 380m² · R$ 4,8MI</span>
+                <span className="mx-6 text-[#C8B89A]/30">——</span>
+                <span className="text-[#C8B89A]/60 text-xs tracking-[0.25em] uppercase font-light">PENTHOUSE · 45° ANDAR · VISTA 360° · 620m² · R$ 18,5MI</span>
+                <span className="mx-6 text-[#C8B89A]/30">——</span>
+                <span className="text-[#C8B89A]/60 text-xs tracking-[0.25em] uppercase font-light">APARTAMENTO · FRENTE MAR · 3 SUÍTES · 185m² · R$ 2,1MI</span>
+                <span className="mx-6 text-[#C8B89A]/30">——</span>
+                <span className="text-[#C8B89A]/60 text-xs tracking-[0.25em] uppercase font-light">MANSÃO · BARRA NORTE · 6 SUÍTES · 850m² · R$ 12,5MI</span>
+                <span className="mx-6 text-[#C8B89A]/30">——</span>
+                <span className="text-[#C8B89A]/60 text-xs tracking-[0.25em] uppercase font-light">VILLA · CONDOMÍNIO FECHADO · 4 SUÍTES · 420m² · R$ 3,2MI</span>
+                <span className="mx-6 text-[#C8B89A]/30">——</span>
+              </span>
+            ))}
+          </div>
+        </div>
 
         {/* Subheadline */}
         <p
           ref={subheadlineRef}
           className="text-[#F5F0E8]/70 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light"
         >
-          Imóveis de alto padrão nas praias mais exclusivas do Brasil. Experiência
-          personalizada para quem valoriza o extraordinário.
+          Os melhores apartamentos de BC não estão nos portais. Estão aqui.
+          Acesso exclusivo a lançamentos, coberturas e frente-mar antes de chegarem ao mercado.
         </p>
 
         {/* Search Bar */}
@@ -148,22 +170,22 @@ export function HeroSection({ onSearch }: HeroSectionProps) {
           className="flex flex-wrap items-center justify-center gap-8 md:gap-16"
         >
           <div className="text-center">
-            <p className="font-display text-4xl md:text-5xl text-white mb-1">380+</p>
-            <p className="text-[#8A8580] text-sm tracking-wide">Imóveis Disponíveis</p>
+            <p className="font-display text-4xl md:text-5xl text-white mb-1">+380</p>
+            <p className="text-[#8A8580] text-sm tracking-wide">Imóveis em Carteira</p>
           </div>
 
           <div className="hidden md:block w-px h-16 gold-line-vertical" />
 
           <div className="text-center">
             <p className="font-display text-4xl md:text-5xl text-white mb-1">R$ 2,1bi</p>
-            <p className="text-[#8A8580] text-sm tracking-wide">Em Negociações</p>
+            <p className="text-[#8A8580] text-sm tracking-wide">Negociados</p>
           </div>
 
           <div className="hidden md:block w-px h-16 gold-line-vertical" />
 
           <div className="text-center">
-            <p className="font-display text-4xl md:text-5xl text-white mb-1">14 Anos</p>
-            <p className="text-[#8A8580] text-sm tracking-wide">De Experiência</p>
+            <p className="font-display text-4xl md:text-5xl text-white mb-1">14 anos</p>
+            <p className="text-[#8A8580] text-sm tracking-wide">De Mercado Premium</p>
           </div>
         </div>
       </div>

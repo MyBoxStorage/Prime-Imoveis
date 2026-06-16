@@ -119,6 +119,10 @@ module.exports = {
           "0%": { transform: "translateX(100%)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
+        "ticker": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-33.333%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -130,6 +134,7 @@ module.exports = {
         "pulse-gold": "pulse-gold 2s infinite ease-in-out",
         "float": "float 3s ease-in-out infinite",
         "slide-in-right": "slide-in-right 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+        "ticker": "ticker 35s linear infinite",
       },
       transitionTimingFunction: {
         'elegant': 'cubic-bezier(0.16, 1, 0.3, 1)',

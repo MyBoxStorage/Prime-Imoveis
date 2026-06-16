@@ -423,6 +423,15 @@
   }
 }
 
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
