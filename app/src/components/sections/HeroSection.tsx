@@ -103,7 +103,7 @@ export function HeroSection({ onSearch }: HeroSectionProps) {
         className="absolute inset-0"
         style={{
           background:
-            'linear-gradient(to bottom, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.5) 50%, rgba(10,10,10,0.85) 100%)',
+            'linear-gradient(to bottom, rgba(10,10,10,0.45) 0%, rgba(10,10,10,0.65) 50%, rgba(10,10,10,0.88) 100%)',
         }}
       />
 
@@ -131,20 +131,20 @@ export function HeroSection({ onSearch }: HeroSectionProps) {
         </h1>
 
         {/* Ticker */}
-        <div className="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden mb-10 py-3 border-y border-[#C8B89A]/20">
+        <div className="relative w-screen left-1/2 -translate-x-1/2 overflow-hidden mb-10 py-3 border-y border-[#C8B89A]/40">
           <div className="flex whitespace-nowrap animate-ticker">
             {[...Array(3)].map((_, i) => (
               <span key={i} className="flex items-center gap-0 shrink-0">
-                <span className="text-[#C8B89A]/60 text-xs tracking-[0.25em] uppercase font-light">COBERTURA · BARRA SUL · 4 SUÍTES · 380m² · R$ 4,8MI</span>
-                <span className="mx-6 text-[#C8B89A]/30">——</span>
-                <span className="text-[#C8B89A]/60 text-xs tracking-[0.25em] uppercase font-light">PENTHOUSE · 45° ANDAR · VISTA 360° · 620m² · R$ 18,5MI</span>
-                <span className="mx-6 text-[#C8B89A]/30">——</span>
-                <span className="text-[#C8B89A]/60 text-xs tracking-[0.25em] uppercase font-light">APARTAMENTO · FRENTE MAR · 3 SUÍTES · 185m² · R$ 2,1MI</span>
-                <span className="mx-6 text-[#C8B89A]/30">——</span>
-                <span className="text-[#C8B89A]/60 text-xs tracking-[0.25em] uppercase font-light">MANSÃO · BARRA NORTE · 6 SUÍTES · 850m² · R$ 12,5MI</span>
-                <span className="mx-6 text-[#C8B89A]/30">——</span>
-                <span className="text-[#C8B89A]/60 text-xs tracking-[0.25em] uppercase font-light">VILLA · CONDOMÍNIO FECHADO · 4 SUÍTES · 420m² · R$ 3,2MI</span>
-                <span className="mx-6 text-[#C8B89A]/30">——</span>
+                <span className="text-[#C8B89A] text-xs tracking-[0.25em] uppercase font-light">COBERTURA · BARRA SUL · 4 SUÍTES · 380m² · R$ 4,8MI</span>
+                <span className="mx-6 text-[#C8B89A]/60">——</span>
+                <span className="text-[#C8B89A] text-xs tracking-[0.25em] uppercase font-light">PENTHOUSE · 45° ANDAR · VISTA 360° · 620m² · R$ 18,5MI</span>
+                <span className="mx-6 text-[#C8B89A]/60">——</span>
+                <span className="text-[#C8B89A] text-xs tracking-[0.25em] uppercase font-light">APARTAMENTO · FRENTE MAR · 3 SUÍTES · 185m² · R$ 2,1MI</span>
+                <span className="mx-6 text-[#C8B89A]/60">——</span>
+                <span className="text-[#C8B89A] text-xs tracking-[0.25em] uppercase font-light">MANSÃO · BARRA NORTE · 6 SUÍTES · 850m² · R$ 12,5MI</span>
+                <span className="mx-6 text-[#C8B89A]/60">——</span>
+                <span className="text-[#C8B89A] text-xs tracking-[0.25em] uppercase font-light">VILLA · CONDOMÍNIO FECHADO · 4 SUÍTES · 420m² · R$ 3,2MI</span>
+                <span className="mx-6 text-[#C8B89A]/60">——</span>
               </span>
             ))}
           </div>
